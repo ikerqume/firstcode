@@ -35,7 +35,7 @@ body {
     padding: 20px;
     text-align: center;
 }
-.3x2 {
+.github {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
