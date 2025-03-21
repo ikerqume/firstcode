@@ -68,3 +68,12 @@ body {
 .mapa {
     margin-top: 20px;
 }
+@media (max-width: 768px) {
+    .texto {
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto, .mapa {
+        width: 100%;
+    }
+}
