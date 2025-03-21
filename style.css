@@ -1,0 +1,70 @@
+.cabezera { 
+    background: url(./IMG/header.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 150px 50px;
+    color: white;
+}
+
+.cabezera h1{
+
+    font-size: 2.5em;
+    max-width: 600px;
+    color: black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.cabezera h3 {
+
+    font-size: 1.5em;
+    max-width: 600px;
+    color: black;
+    margin: auto;
+    margin-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.PROYECTOS {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.github {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px 0;
+}
+.github img{
+    width: 100px;
+    height: auto;
+}
+.feedback {
+    background-color: #5fa8a7;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+.texto {
+    text-align: left;
+    padding: 20px;
+}
+.preguntas {
+    list-style: none;
+    padding: 0;
+}
+.final {
+    background-color: grey;
+    padding: 10px;
+    margin-top: 20px;
+}
+.mapa {
+    margin-top: 20px;
+}
