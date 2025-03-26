@@ -1,3 +1,12 @@
+
+* {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+
 .cabezera {
     background: url(./IMG/header.jpg) no-repeat center;
     background-size: cover;
