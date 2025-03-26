@@ -101,6 +101,8 @@ body {
     border: 0;
 }
 
+
+
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
     .github {
