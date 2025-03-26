@@ -1,4 +1,4 @@
-.cabezera { 
+.cabezera {
     background: url(./IMG/header.jpg) no-repeat center;
     background-size: cover;
     text-align: center;
@@ -6,8 +6,7 @@
     color: white;
 }
 
-.cabezera h1{
-
+.cabezera h1 {
     font-size: 2.5em;
     max-width: 600px;
     color: black;
@@ -16,7 +15,6 @@
 }
 
 .cabezera h3 {
-
     font-size: 1.5em;
     max-width: 600px;
     color: black;
@@ -25,16 +23,17 @@
 }
 
 body {
-
     margin: 0;
     padding: 0;
 }
+
 .PROYECTOS {
     max-width: 900px;
     margin: auto;
     padding: 20px;
     text-align: center;
 }
+
 .github {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -42,38 +41,64 @@ body {
     justify-items: center;
     padding: 20px 0;
 }
-.github img{
+
+.github img {
     width: 100px;
     height: auto;
 }
+
 .feedback {
     background-color: #5fa8a7;
     color: white;
     padding: 15px;
     font-size: 18px;
 }
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
 .texto {
-    text-align: left;
+    flex: 1;
     padding: 20px;
+    text-align: left;
 }
-.preguntas {
-    list-style: none;
-    padding: 0;
+
+.mapa {
+    flex: 1;
+    margin-left: 20px; /* Añade espacio entre las columnas */
 }
+
+.mapa iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+}
+
 .final {
     background-color: grey;
     padding: 10px;
     margin-top: 20px;
 }
-.mapa {
-    margin-top: 20px;
-}
+
+/* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
-    .texto {
-        flex-direction: column;
+    .github {
+        grid-template-columns: repeat(2, 1fr); /* 2 imágenes en horizontal */
+    }
+
+    .contenedor {
+        flex-direction: column; /* Cambia a columna */
         align-items: center;
     }
-    .texto, .mapa {
+
+    .mapa {
+        margin-left: 0;
+        margin-top: 20px; /* Espacio entre el texto y el mapa */
         width: 100%;
     }
 }
