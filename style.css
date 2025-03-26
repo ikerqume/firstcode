@@ -117,6 +117,7 @@ body {
     .mapa {
         margin-left: 0;
         margin-top: 20px; /* Espacio entre el texto y el mapa */
-        width: 100%;
+        width: 70%;
+        height: 50%;
     }
 }
