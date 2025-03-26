@@ -1,34 +1,35 @@
-
+/* Estilos globales */
 * {
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: <weight>; 
     font-style: normal;
-  }
-
-
-.cabezera {
-    background: url(./IMG/header.jpg) no-repeat center;
-    background-size: cover;
-    text-align: center;
-    padding: 150px 50px;
-    color: white;
 }
 
-.cabezera h1 {
-    font-size: 2.5em;
+/* Encabezado */
+.cabezera { 
+    background: url(./IMG/header.jpg) no-repeat center; /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    text-align: center;
+    padding: 150px 50px; /* Espaciado interno */
+    color: white; /* Color del texto */
+}
+
+/* Títulos dentro del encabezado */
+.cabezera h1, .cabezera h3 {
     max-width: 600px;
     color: black;
     margin: auto;
     margin-top: 20px;
+}
+
+/* Tamaño de fuentes */
+.cabezera h1 {
+    font-size: 2.5em;
 }
 
 .cabezera h3 {
     font-size: 1.5em;
-    max-width: 600px;
-    color: black;
-    margin: auto;
-    margin-top: 20px;
 }
 
 body {
@@ -36,17 +37,19 @@ body {
     padding: 0;
 }
 
-.PROYECTOS {
+/* Sección de proyectos */
+.PROYECTOS { 
     max-width: 900px;
     margin: auto;
     padding: 20px;
     text-align: center;
 }
 
+/* Estilos para la galería de GitHub */
 .github {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espaciado entre imágenes */
     justify-items: center;
     padding: 20px 0;
 }
@@ -56,68 +59,71 @@ body {
     height: auto;
 }
 
+/* Sección de feedback */
 .feedback {
-    background-color: #5fa8a7;
+    background-color: #5fa8a7; /* Color de fondo */
     color: white;
     padding: 15px;
     font-size: 18px;
-    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    width: 100vw; 
     text-align: center;
-    margin-left: calc(-50vw + 50%); /* Corrige el desplazamiento */
+    margin-left: calc(-50vw + 50%); 
 }
 
+/* Pie de página */
 .final {
     background-color: grey;
     padding: 10px;
     margin-top: 20px;
-    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    width: 100vw; 
     text-align: center;
-    margin-left: calc(-50vw + 50%); /* Corrige el desplazamiento */
+    margin-left: calc(-50vw + 50%); 
 }
 
-
+/* Contenedor de la sección de información */
 .contenedor {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Diseño en fila */
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 20px;
 }
 
+/* Estilos para el texto */
 .texto {
     flex: 1;
     padding: 20px;
     text-align: left;
 }
 
+/* Mapa */
 .mapa {
     flex: 1;
-    margin-left: 20px; /* Añade espacio entre las columnas */
+    margin-left: 20px; /* Espacio entre las columnas */
 }
 
+/* Estilos para el iframe del mapa */
 .mapa iframe {
-    width: 120%;
+    width: 120%; 
     height: 320px;
     border: 0;
 }
 
-
-
-/* Media Query para dispositivos móviles */
+/* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
     .github {
-        grid-template-columns: repeat(2, 1fr); /* 2 imágenes en horizontal */
+        grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas */
     }
 
     .contenedor {
-        flex-direction: column; /* Cambia a columna */
+        flex-direction: column; /* Cambia la dirección a columna */
         align-items: center;
     }
 
     .mapa {
         margin-left: 0;
-        margin-top: 20px; /* Espacio entre el texto y el mapa */
-        width: 70%;
+        margin-top: 20px; /* Espacio adicional */
+        width: 70%; /* Reduce el ancho del mapa */
         height: 50%;
     }
 }
