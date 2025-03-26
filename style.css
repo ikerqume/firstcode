@@ -52,7 +52,20 @@ body {
     color: white;
     padding: 15px;
     font-size: 18px;
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    text-align: center;
+    margin-left: calc(-50vw + 50%); /* Corrige el desplazamiento */
 }
+
+.final {
+    background-color: grey;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    text-align: center;
+    margin-left: calc(-50vw + 50%); /* Corrige el desplazamiento */
+}
+
 
 .contenedor {
     display: flex;
@@ -74,15 +87,9 @@ body {
 }
 
 .mapa iframe {
-    width: 100%;
-    height: 250px;
+    width: 120%;
+    height: 320px;
     border: 0;
-}
-
-.final {
-    background-color: grey;
-    padding: 10px;
-    margin-top: 20px;
 }
 
 /* Media Query para dispositivos móviles */
